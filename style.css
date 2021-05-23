@@ -32,16 +32,14 @@ body{
     height: 100%;
     width: auto;
 }
+.woman-desktop{
+    display: none;
+}
 
 .box{
-    position: absolute;
-    top: 40%;
-    left: -20%;
-    transition: transform 250ms ease-in;
+    display: none;
 }
-.box.on-hover{
-    transform: translateX(-20%);
-}
+
 
 .card-right{
     align-self: center;
@@ -102,12 +100,28 @@ details[open] > summary::after{
         height: 500px;
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
-    .main-pic img{
-        transform: translateX(-70px);
-    }
+    
     .woman-mobile{
         display: none;
+    }
+    .woman-desktop{
+        display: block;
+        transform: translateX(-70px);
+    }
+    .box{
+        display: block;
+        position: absolute;
+        top: 40%;
+        left: -20%;
+        transition: transform 250ms ease-in;
+    }
+    .box.on-hover{
+        transform: translateX(-20%);
+    }
+    main{
+        width: 100%;
     }
 }
 
