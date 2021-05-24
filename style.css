@@ -17,22 +17,26 @@ body{
 }
 
 .card{
+    
     background-color: #fff;
     border-radius: 15px;
     width: 80vw;
-    padding: 0 2rem;
-    padding-bottom: 2rem
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+    box-shadow:  0px 17px 20px -3px rgba(0,0,0,0.5)
+
+    ;
     
 }
 .card-left{
-    height: 100%;
+    margin-bottom: -4rem;
     background-image: url(images/bg-pattern-mobile.svg);
     background-repeat: no-repeat;
     background-position: top center;
     
 }
 .main-pic{
-     display: flex;
+    
 }
 .woman-mobile{
     display: block;
@@ -40,7 +44,6 @@ body{
     top:-110px;
     left: -14px;
     margin: auto;
-    
 
 }
 
@@ -58,22 +61,20 @@ body{
     overflow:hidden;
 }
 .card-right > h1{
-    font-size: 2rem;
-    padding-left: 2rem;
-    
+    font-size: 1.8rem;
+    text-align: center;
 }
 .list{
-    margin-top: 1.5rem; 
+    margin-top: 1rem; 
    
 }
 details{
-    padding: 0 2rem;
+    padding: 0 1.5rem;
     position: relative;
 }
 
 summary {
     list-style: none;
-    font-size: 0.9rem;
     padding: 1rem 0;
     display: flex;
     justify-content: space-between;
@@ -91,9 +92,10 @@ summary::after{
     margin-left: 1rem;
 }
 .details-content{
+    font-size: 0.7rem;
     padding-bottom: 1rem; 
-    margin-right: 7rem;
     border-bottom: 1px solid hsl(240, 5%, 91%);
+    line-height: 1.5;
 }
 details[open] summary{
     font-weight:700;
@@ -111,12 +113,13 @@ details[open] > summary::after{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 0;
     }
     .card-left{
         height: 100%;
         background-image: url(images/bg-pattern-desktop.svg);
         background-repeat: no-repeat;
-        background-position: bottom 35% right -15%;
+        background-position: bottom 25% right -15%;
         position: relative;
     }
     .main-pic{
@@ -131,12 +134,12 @@ details[open] > summary::after{
     }
     .woman-desktop{
         display: block;
-        transform: translateX(-70px);
+        transform: translate(-75px, -30px);
     }
     .box{
         display: block;
         position: absolute;
-        top: 40%;
+        top: 35%;
         left: -20%;
         transition: transform 250ms ease-in;
     }
@@ -146,8 +149,28 @@ details[open] > summary::after{
     main{
         width: 100%;
     }
+    .card-right h1{
+        font-size: 2rem;
+        padding-left: 0;
+        text-align: left;
+    }
+    summary{
+        font-size: 0.9rem;
+    }
+    details{
+        padding: 0;
+        padding-right: 7rem;
+    }
+    .details-content{
+        padding-right: 1rem;
+        font-size: 0.8rem;
+    }
 }
 
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 1rem;
+}
 .attribution a { color: hsl(228, 45%, 44%); }
