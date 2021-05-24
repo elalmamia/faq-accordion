@@ -45,6 +45,6 @@ Users should be able to:
 - Flexbox
 - JS
 
-In the challenge there is a note that it is possible without JS. Can someone tell me how?
+
 
 
